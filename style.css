@@ -1,0 +1,283 @@
+body {
+  background-color: blanchedalmond;
+  justify-content: center;
+  align-items: center; 
+  margin: 0;
+  font-family: "Patrick Hand", monospace;
+  background: linear-gradient(315deg,#070836, #2b3976);
+  padding: 20px;
+  color: whitesmoke;
+  background-position: center;
+}
+input,
+select,
+textarea,
+button,
+output,
+meter {
+  display: block;
+  width: 98%;
+  margin-top: 5px;
+  padding: 1%;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  background-color: wheat;
+}
+input[type="color"] {
+  width: 10%;
+  height: 80px;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline-block;
+  width: auto;
+  margin-right: 5px;
+}
+input[type="range"] {
+  accent-color: rgb(165, 79, 42);
+}
+.inline-label {
+  display: inline-block;
+  margin-right: 15px;
+}
+button,
+input[type="submit"],
+input[type="reset"] {
+  align-content: center;
+  background-color: #eef603;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 20%;
+}
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  background: #5887db;
+}
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: 600;
+}
+form {
+  background: #ebdbbc;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+fieldset {
+  border: 1px solid #d8a682;
+  margin-bottom: 15px;
+  padding: 15px;
+  border-radius: 8px;
+}
+legend {
+  font-weight: bold;
+  padding: 0 5px;
+}
+img {
+  width: 400px;
+  height: auto;
+}
+
+a {
+  color: chocolate;
+  text-align: center;
+  text-shadow: 0cap 1px 5px rgb(255, 196, 0);
+  font-family: "Patrick Hand", monospace;
+}
+h1 {
+  font-family: "Bitcount","Tektur", monospace;
+  font-weight: 300;
+  font-style: normal;
+  text-align: center;
+  color: #eef603;
+  font-size: 90px;
+}
+h2 {
+  font-family: "Tektur", sans-serif;;
+  font-weight: 500;
+  font-style: normal;
+  text-align: center;
+  color: #eef603;
+  font-size: 90px;
+}
+
+ul {
+  background-color: blanchedalmond;
+  font-family: "Tac One", sans-serif;
+  font-weight: 100;
+  font-style: light;
+}
+table {
+  border: 1px;
+  border: solid dashed #eef603;
+  width: 100%;
+  border-collapse: collapse;
+}
+thead {
+  border: 1px solid #eef603;
+}
+tr {
+  border: 1px dashed #eef603;
+}
+th {
+  border: 1px solid #eef603;
+}
+td {
+  border: 1px dashed #eef603;
+  padding-left: 10px;
+}
+.table-img{
+  width: 50px;
+
+}
+td.price{
+  text-align: center;
+  font-weight: bold;
+}
+input {
+  border: 1px solid #eef603;
+  background-color: wheat;
+  padding: 4px;
+  text-align: left;
+  color: rgb(22, 12, 0);
+}
+input::file-selector-button {
+  border: 1px solid #eef603;
+  background-color: #fcedd2f6;
+  padding: 4px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+input::placeholder {
+  color: rgb(22, 12, 0);
+  font-size: 1.1em;
+  opacity: 0.7;
+  text-align: left;
+}
+button {
+  align-items: center;
+  background-color: burlywood;
+  border: #eef603 1px solid;
+}
+
+.cat {
+  width: 200px;
+  height: auto;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+.mybutton {
+  display: inline-block;
+  padding: 15px 30px;
+  margin-top: 20px;
+  background-color: aliceblue;
+  color: white;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 0 4px 6px red;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease;
+}
+.my-button:hover {
+  background-color: #0056b3;
+  transform: translateY(-3px); /* Move the button up slightly */
+}
+.my-button:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+.animated-shape {
+  width: 150px;
+  height: 150px;
+  margin: 40px auto;
+
+  background-image: url(./media/bite-knights.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  animation-name: float;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+.animated-shape-label {
+  cursor: pointer; /* Changes the mouse to a pointer on hover */
+  display: inline-block; /* Ensures it behaves correctly */
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0); /* Start color */
+  }
+  50% {
+    transform: translateY(-20px); /* Move up */ /* Mid-point color */
+  }
+  100% {
+    transform: translateY(0); /* End color */
+  }
+}
+/* Hide the actual checkbox */
+.toggle {
+  display: none;
+}
+
+/* When the checkbox IS checked, target the shape */
+/* The '~' is the "general sibling combinator". It selects the .animated-shape that comes AFTER .toggle */
+.toggle:checked ~ .animated-shape {
+  animation-name: spin-and-grow;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1; /* Only run once per click */
+  animation-fill-mode: forwards; /* Stay at the final state */
+}
+
+/* A new animation for the click event */
+@keyframes spin-and-grow {
+  0% {
+    transform: scale(1) rotate(0deg);
+    background-color: #ff416c;
+    border-radius: 50%;
+    background-size: 70%; /* Maintain initial size for smooth transition */
+  }
+  100% {
+    transform: scale(1.5) rotate(360deg);
+    background-color: #28a745; /* Green */
+    border-radius: 10px; /* Becomes a square */
+    background-size: 100%; /* Cat grows to fill the larger shape */
+  }
+}
+
+/* FONTS */
+
+
+.bitcount-bc {
+  font-family: "Bitcount", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 0.5,
+    "ELSH" 0,
+    "ELXP" 0;
+}
+
+.tektur-tektur {
+  font-family: "Tektur", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
