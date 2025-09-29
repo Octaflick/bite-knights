@@ -3,81 +3,11 @@ body {
   justify-content: center;
   align-items: center; 
   margin: 0;
-  font-family: "Patrick Hand", monospace;
+  font-family: 'Courier New', Courier, monospace;
   background: linear-gradient(315deg,#070836, #2b3976);
   padding: 20px;
   color: whitesmoke;
   background-position: center;
-}
-input,
-select,
-textarea,
-button,
-output,
-meter {
-  display: block;
-  width: 98%;
-  margin-top: 5px;
-  padding: 1%;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 14px;
-  background-color: wheat;
-}
-input[type="color"] {
-  width: 10%;
-  height: 80px;
-}
-input[type="checkbox"],
-input[type="radio"] {
-  display: inline-block;
-  width: auto;
-  margin-right: 5px;
-}
-input[type="range"] {
-  accent-color: rgb(165, 79, 42);
-}
-.inline-label {
-  display: inline-block;
-  margin-right: 15px;
-}
-button,
-input[type="submit"],
-input[type="reset"] {
-  align-content: center;
-  background-color: #eef603;
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
-  color: #fff;
-  margin-top: 15px;
-  cursor: pointer;
-  transition: 0.3s;
-  width: 20%;
-}
-button:hover,
-input[type="submit"]:hover,
-input[type="reset"]:hover {
-  background: #5887db;
-}
-label {
-  display: block;
-  margin-top: 10px;
-  font-weight: 600;
-}
-form {
-  background: #ebdbbc;
-  padding: 15px;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-fieldset {
-  border: 1px solid #d8a682;
-  margin-bottom: 15px;
-  padding: 15px;
-  border-radius: 8px;
-}
-legend {
-  font-weight: bold;
-  padding: 0 5px;
 }
 img {
   width: 400px;
@@ -85,23 +15,24 @@ img {
 }
 
 a {
-  color: chocolate;
+  color: #eef603;
   text-align: center;
-  text-shadow: 0cap 1px 5px rgb(255, 196, 0);
-  font-family: "Patrick Hand", monospace;
+  text-shadow: 0cap 1px 5px #939003;
+  font-family: 'Courier New', Courier, monospace;
+  text-decoration: none;
 }
 h1 {
   font-family: "Bitcount","Tektur", monospace;
-  font-weight: 300;
+  font-weight: 200;
   font-style: normal;
   text-align: center;
   color: #eef603;
   font-size: 90px;
+  font-style:italic;
 }
 h2 {
-  font-family: "Tektur", sans-serif;;
-  font-weight: 500;
-  font-style: normal;
+  font-family: "Bitcount","Tektur", monospace;
+  font-weight: 150;
   text-align: center;
   color: #eef603;
   font-size: 90px;
@@ -113,7 +44,7 @@ ul {
   font-weight: 100;
   font-style: light;
 }
-table {
+table#menu{
   border: 1px;
   border: solid dashed #eef603;
   width: 100%;
@@ -131,10 +62,12 @@ th {
 td {
   border: 1px dashed #eef603;
   padding-left: 10px;
+  font-weight: 500;
+  font-size: 120%;
 }
 .table-img{
   width: 50px;
-
+  padding: 4px 2px 2px 2px ;
 }
 td.price{
   text-align: center;
