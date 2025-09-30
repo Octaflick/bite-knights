@@ -38,6 +38,7 @@ h1 {
   color: #eef603;
   font-size: 90px;
   font-style:italic;
+  font-size: clamp(4rem, 1vw, 1rem);
 }
 h2 {
   font-family: "Bitcount","Tektur", monospace;
