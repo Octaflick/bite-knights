@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   background-color: blanchedalmond;
   justify-content: center;
@@ -8,6 +13,7 @@ body {
   padding: 20px;
   color: whitesmoke;
   background-position: center;
+  width: 100vw;
 }
 img {
   width: 400px;
@@ -20,6 +26,9 @@ a {
   text-shadow: 0cap 1px 5px #939003;
   font-family: 'Courier New', Courier, monospace;
   text-decoration: none;
+}
+a.bottom-links{
+  text-align: center;
 }
 h1 {
   font-family: "Bitcount","Tektur", monospace;
