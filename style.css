@@ -2,12 +2,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+*::selection{
+  background-color: #b6b000ee;
 }
 body {
+  padding: 15px;
   background-color: blanchedalmond;
   justify-content: center;
   align-items: center;
-  font-family: "Courier New", Courier, monospace;
   background: linear-gradient(315deg, #070836, #2b3976);
   color: whitesmoke;
   background-position: center;
@@ -27,33 +31,43 @@ a {
   font-family: "Courier New", Courier, monospace;
   text-decoration: none;
 }
-a.bottom-links {
-  text-align: center;
+
+.menu-button{
+  justify-self: center;
+  width: max-content;
+  height: max-content;
 }
-nav button a {
+button a {
+  font-size: 3vw;
   color: #2100f7b7;
   text-align: center;
   text-shadow: 0cap 1px 5px #939003;
-  font-family: "Courier New", Courier, monospace;
+}
+button {
+  height: fit-content;
+  width: 30%;
   font-weight: bolder;
   text-decoration: none;
   font-size: 1.5rem;
   letter-spacing: 0.2rem;
-}
-nav button a:active {
-  transform:scale(210%);
-}
-nav button {
-  
+  color: #2100f7b7;
+  text-align: center;
+  text-shadow: 0cap 1px 5px #939003;
   margin: auto;
-  width: 30%;
   height: 3.5rem;
   background-color: #dde400;
   border-radius: 20px;
+  border: #eef603 1px solid;
 }
-nav button:hover {
+button:hover {
   box-shadow: 0 0 7px 1px #f7fc65;
 }
+.home-buttons{
+  width: 70%;
+  height: auto;
+  margin: 5% auto;
+}
+
 h1 {
   font-family: "Bitcount", "Tektur", monospace;
   font-weight: 200;
@@ -78,6 +92,7 @@ ul {
   font-weight: 100;
   font-style: light;
 }
+
 table#menu {
   border: 1px;
   border: solid dashed #eef603;
@@ -99,76 +114,18 @@ td {
   font-weight: 500;
   font-size: 120%;
 }
-.table-img {
-  width: 50px;
-  padding: 4px 2px 2px 2px;
-}
 td.price {
   text-align: center;
   font-weight: bold;
 }
-input {
-  border: 1px solid #eef603;
-  background-color: wheat;
-  padding: 4px;
-  text-align: left;
-  color: rgb(22, 12, 0);
+.table-img {
+  width: 50px;
+  padding: 4px 2px 2px 2px;
 }
-input::file-selector-button {
-  border: 1px solid #eef603;
-  background-color: #fcedd2f6;
-  padding: 4px;
-  text-align: center;
-  border-radius: 5px;
+.table-img:hover{
+  transform: scale(110%);
 }
 
-input::placeholder {
-  color: rgb(22, 12, 0);
-  font-size: 1.1em;
-  opacity: 0.7;
-  text-align: left;
-}
-button {
-  align-items: center;
-  background-color: burlywood;
-  border: #eef603 1px solid;
-}
-.home-buttons{
-  width: 70%;
-  height: auto;
-  margin: 5% auto;
-}
-
-.cat {
-  width: 200px;
-  height: auto;
-}
-
-.container {
-  text-align: center;
-  padding: 20px;
-}
-
-.mybutton {
-  display: inline-block;
-  padding: 15px 30px;
-  margin-top: 20px;
-  background-color: aliceblue;
-  color: white;
-  border-radius: 8px;
-  font-size: 16px;
-  font-weight: bold;
-  box-shadow: 0 4px 6px red;
-  transition: background-color 0.3s ease-in-out, transform 0.3s ease;
-}
-.my-button:hover {
-  background-color: #0056b3;
-  transform: translateY(-3px); /* Move the button up slightly */
-}
-.my-button:active {
-  transform: translateY(1px);
-  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
-}
 .animated-shape {
   width: 150px;
   height: 150px;
@@ -190,6 +147,8 @@ button {
   display: inline-block; /* Ensures it behaves correctly */
 }
 
+/* ANIMATIONS */
+
 @keyframes float {
   0% {
     transform: translateY(0); /* Start color */
@@ -199,35 +158,6 @@ button {
   }
   100% {
     transform: translateY(0); /* End color */
-  }
-}
-/* Hide the actual checkbox */
-.toggle {
-  display: none;
-}
-
-/* When the checkbox IS checked, target the shape */
-/* The '~' is the "general sibling combinator". It selects the .animated-shape that comes AFTER .toggle */
-.toggle:checked ~ .animated-shape {
-  animation-name: spin-and-grow;
-  animation-duration: 1.5s;
-  animation-iteration-count: 1; /* Only run once per click */
-  animation-fill-mode: forwards; /* Stay at the final state */
-}
-
-/* A new animation for the click event */
-@keyframes spin-and-grow {
-  0% {
-    transform: scale(1) rotate(0deg);
-    background-color: #ff416c;
-    border-radius: 50%;
-    background-size: 70%; /* Maintain initial size for smooth transition */
-  }
-  100% {
-    transform: scale(1.5) rotate(360deg);
-    background-color: #28a745; /* Green */
-    border-radius: 10px; /* Becomes a square */
-    background-size: 100%; /* Cat grows to fill the larger shape */
   }
 }
 
