@@ -4,7 +4,7 @@
   box-sizing: border-box;
   font-family: "Courier New", Courier, monospace;
 }
-*::selection{
+*::selection {
   background-color: #b6b000ee;
 }
 body {
@@ -32,7 +32,7 @@ a {
   text-decoration: none;
 }
 
-.menu-button{
+.menu-button {
   justify-self: center;
   width: max-content;
   height: max-content;
@@ -62,7 +62,7 @@ button {
 button:hover {
   box-shadow: 0 0 7px 1px #f7fc65;
 }
-.home-buttons{
+.home-buttons {
   width: 70%;
   height: auto;
   margin: 5% auto;
@@ -83,7 +83,7 @@ h2 {
   font-weight: 150;
   text-align: center;
   color: #eef603;
-  font-size: 90px;
+  font-size: 48px;
 }
 
 ul {
@@ -117,14 +117,116 @@ td {
 td.price {
   text-align: center;
   font-weight: bold;
+  margin: auto;
 }
 .table-img {
   width: 50px;
   padding: 4px 2px 2px 2px;
 }
-.table-img:hover{
+.table-img:hover {
   transform: scale(110%);
 }
+
+.wrapper{
+    top: 3rem;
+    display: inline-block;
+    position: relative;
+    width: max-content;
+    height: max-content;
+    padding: 2%;
+    background: linear-gradient(0deg, rgba(255, 177, 60, 0.093), #00000050);
+    margin: 5% auto;
+    border-radius: 8px;
+    
+}
+.wrapper::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 8px;
+  padding: 2px;
+  background: linear-gradient(315deg, #fff201, #1555eb);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  pointer-events: none;
+}
+form.feedback-form{
+  display: flex;
+  flex-direction: column;
+}
+div.input-field{
+  padding: 5px;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  position: relative;
+}
+.input-field label{
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  color: rgba(255, 235, 205, 0.684);
+  font-size: 11px;
+  pointer-events: none;
+  transition: 0.3s ease;
+}
+.input-field input {
+  padding: 3%;
+  width: 100%;
+  height: 40px;
+  background: transparent;
+  border: 0.1px solid antiquewhite;
+  outline: none;
+  font-size: 1rem;
+  color: antiquewhite;
+}
+.input-field input:focus,.input-field textarea:focus{
+  outline: none;
+  border: 1px solid transparent;
+  border-image: linear-gradient(315deg, #fff201, #1555eb);
+  border-image-slice: 1;
+  border-radius: 2px;
+  transition: 10s linear;
+  transform: scale(103%);
+  transition: 0.3s ease-in-out;
+}
+.input-field input:focus~label,
+.input-field input:valid~label,
+.input-field textarea:focus~label {
+  font-size: 0px;
+}
+.input-field textarea{
+  background-color: #00000000;
+  color: antiquewhite;
+  border: 0.1px solid antiquewhite;
+  padding: 2px;
+}
+.wrapper form button{
+
+  background-color: #00000000;
+  border: 1px solid #eef603;
+  border-radius: 6px;
+  color: #eef603;
+  width: max-content;
+  margin: 10px auto;
+  padding: 5px;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+}
+.wrapper form button:hover{
+  transition: 0.1s linear;
+  border: 1px solid yellow;
+  color: yellow;
+}
+.wrapper form button:active{
+  transform: scale(110%);
+  transition: 0.1s linear;
+  border: 1px solid yellow;
+  color: yellow;
+}
+
 /* BITE-KNIGHTS LOGO */
 .animated-logo {
   width: 150px;
@@ -137,13 +239,10 @@ td.price {
   background-repeat: no-repeat;
   background-position: center;
 
-  animation-name: float;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
+  animation: float 3s infinite ease-in-out;
 }
 .animated-logo-label {
-  cursor: pointer; 
+  cursor: pointer;
   display: inline-block;
 }
 
@@ -152,14 +251,13 @@ td.price {
 }
 /* ANIMATIONS */
 
-
 @keyframes slideInUp {
   from {
-    transform: translateX(100%); 
+    transform: translateX(100%);
   }
   to {
-    transform: translateY(0); 
-    opacity: 1; 
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 
