@@ -6,14 +6,14 @@
 body {
   background-color: blanchedalmond;
   justify-content: center;
-  align-items: center; 
-  margin: 0;
-  font-family: 'Courier New', Courier, monospace;
-  background: linear-gradient(315deg,#070836, #2b3976);
-  padding: 20px;
+  align-items: center;
+  font-family: "Courier New", Courier, monospace;
+  background: linear-gradient(315deg, #070836, #2b3976);
   color: whitesmoke;
   background-position: center;
   width: 100vw;
+  height: 100vh;
+  overflow: hidden;
 }
 img {
   width: 400px;
@@ -24,24 +24,48 @@ a {
   color: #eef603;
   text-align: center;
   text-shadow: 0cap 1px 5px #939003;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   text-decoration: none;
 }
-a.bottom-links{
+a.bottom-links {
   text-align: center;
 }
+nav button a {
+  color: #2100f7b7;
+  text-align: center;
+  text-shadow: 0cap 1px 5px #939003;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bolder;
+  text-decoration: none;
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+}
+nav button a:active {
+  transform:scale(210%);
+}
+nav button {
+  
+  margin: auto;
+  width: 30%;
+  height: 3.5rem;
+  background-color: #dde400;
+  border-radius: 20px;
+}
+nav button:hover {
+  box-shadow: 0 0 7px 1px #f7fc65;
+}
 h1 {
-  font-family: "Bitcount","Tektur", monospace;
+  font-family: "Bitcount", "Tektur", monospace;
   font-weight: 200;
   font-style: normal;
   text-align: center;
   color: #eef603;
   font-size: 90px;
-  font-style:italic;
+  font-style: italic;
   font-size: clamp(4rem, 1vw, 1rem);
 }
 h2 {
-  font-family: "Bitcount","Tektur", monospace;
+  font-family: "Bitcount", "Tektur", monospace;
   font-weight: 150;
   text-align: center;
   color: #eef603;
@@ -54,7 +78,7 @@ ul {
   font-weight: 100;
   font-style: light;
 }
-table#menu{
+table#menu {
   border: 1px;
   border: solid dashed #eef603;
   width: 100%;
@@ -75,11 +99,11 @@ td {
   font-weight: 500;
   font-size: 120%;
 }
-.table-img{
+.table-img {
   width: 50px;
-  padding: 4px 2px 2px 2px ;
+  padding: 4px 2px 2px 2px;
 }
-td.price{
+td.price {
   text-align: center;
   font-weight: bold;
 }
@@ -108,6 +132,11 @@ button {
   align-items: center;
   background-color: burlywood;
   border: #eef603 1px solid;
+}
+.home-buttons{
+  width: 70%;
+  height: auto;
+  margin: 5% auto;
 }
 
 .cat {
@@ -144,6 +173,7 @@ button {
   width: 150px;
   height: 150px;
   margin: 40px auto;
+  box-sizing: border-box;
 
   background-image: url(./media/bite-knights.png);
   background-size: 100%;
@@ -203,17 +233,12 @@ button {
 
 /* FONTS */
 
-
 .bitcount-bc {
   font-family: "Bitcount", system-ui;
   font-optical-sizing: auto;
   font-weight: 200;
   font-style: normal;
-  font-variation-settings:
-    "slnt" 0,
-    "CRSV" 0.5,
-    "ELSH" 0,
-    "ELXP" 0;
+  font-variation-settings: "slnt" 0, "CRSV" 0.5, "ELSH" 0, "ELXP" 0;
 }
 
 .tektur-tektur {
@@ -221,6 +246,5 @@ button {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+  font-variation-settings: "wdth" 100;
 }
