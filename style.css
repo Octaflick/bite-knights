@@ -125,8 +125,8 @@ td.price {
 .table-img:hover{
   transform: scale(110%);
 }
-
-.animated-shape {
+/* BITE-KNIGHTS LOGO */
+.animated-logo {
   width: 150px;
   height: 150px;
   margin: 40px auto;
@@ -142,12 +142,26 @@ td.price {
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }
-.animated-shape-label {
-  cursor: pointer; /* Changes the mouse to a pointer on hover */
-  display: inline-block; /* Ensures it behaves correctly */
+.animated-logo-label {
+  cursor: pointer; 
+  display: inline-block;
 }
 
+.slide-in {
+  animation: slideInUp 1s ease-out forwards;
+}
 /* ANIMATIONS */
+
+
+@keyframes slideInUp {
+  from {
+    transform: translateX(100%); 
+  }
+  to {
+    transform: translateY(0); 
+    opacity: 1; 
+  }
+}
 
 @keyframes float {
   0% {
