@@ -1,6 +1,6 @@
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
   font-family: "Courier New", Courier, monospace;
 }
@@ -39,6 +39,7 @@ a {
 }
 button a {
   font-size: 3vw;
+  padding: 2px;
   color: #2100f7b7;
   text-align: center;
   text-shadow: 0cap 1px 5px #939003;
@@ -74,16 +75,17 @@ h1 {
   font-style: normal;
   text-align: center;
   color: #eef603;
-  font-size: 90px;
+  text-shadow: 0cap 1px 5px #939003;
   font-style: italic;
-  font-size: clamp(4rem, 1vw, 1rem);
+  font-size: clamp(5rem, 1vw, 1rem);
 }
 h2 {
   font-family: "Bitcount", "Tektur", monospace;
-  font-weight: 150;
+  font-weight: 100;
   text-align: center;
   color: #eef603;
-  font-size: 48px;
+  text-shadow: 0cap 1px 5px #aca902;
+  font-size: clamp(5rem, 1vw, 1rem);
 }
 
 ul {
@@ -94,9 +96,9 @@ ul {
 }
 
 table#menu {
-  border: 1px;
-  border: solid dashed #eef603;
-  width: 100%;
+  margin: 15px auto;
+  border: 1px dashed #eef603;
+  width: 95%;
   border-collapse: collapse;
 }
 thead {
@@ -117,7 +119,7 @@ td {
 td.price {
   text-align: center;
   font-weight: bold;
-  margin: auto;
+  justify-content: center;
 }
 .table-img {
   width: 50px;
@@ -241,6 +243,26 @@ div.input-field{
 
   animation: float 3s infinite ease-in-out;
 }
+div.main-nav{
+  width: 100vw;
+  height: 50px;
+  padding: -5px;
+  background: #eef6036e;
+  position: relative;
+  align-items: center;
+}
+div.main-nav nav{
+  height: auto;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+div.main-nav nav a{
+  margin: 5px;
+}
+
+
 .animated-logo-label {
   cursor: pointer;
   display: inline-block;
