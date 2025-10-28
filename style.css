@@ -8,7 +8,6 @@
   background-color: #b6b000ee;
 }
 body {
-  padding: 15px;
   background-color: blanchedalmond;
   justify-content: center;
   align-items: center;
@@ -54,7 +53,7 @@ button {
   color: #2100f7b7;
   text-align: center;
   text-shadow: 0cap 1px 5px #939003;
-  margin: auto;
+  margin: auto 35%;
   height: 3.5rem;
   background-color: #dde400;
   border-radius: 20px;
@@ -69,6 +68,9 @@ button:hover {
   margin: 5% auto;
 }
 
+p{
+  padding: 15px;
+}
 h1 {
   font-family: "Bitcount", "Tektur", monospace;
   font-weight: 200;
@@ -247,21 +249,24 @@ div.main-nav{
   width: 100vw;
   height: 50px;
   padding: -5px;
-  background: #eef6036e;
+  background: #c2c500ee;
   position: relative;
   align-items: center;
 }
 div.main-nav nav{
+  width: fit-content;
   height: auto;
   position: absolute;
-  right: 10px;
+  margin: auto;
   top: 50%;
   transform: translateY(-50%);
 }
 div.main-nav nav a{
   margin: 5px;
 }
-
+footer{
+  margin: 15px;
+}
 
 .animated-logo-label {
   cursor: pointer;
