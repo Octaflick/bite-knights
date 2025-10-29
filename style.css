@@ -67,6 +67,13 @@ button:hover {
   height: auto;
   margin: 5% auto;
 }
+.home-buttons>nav{
+  display: flex;
+  width: 100%;
+}
+.home-buttons button{
+  margin: 2%;
+}
 
 p{
   padding: 15px;
@@ -274,7 +281,7 @@ footer{
 }
 
 .slide-in {
-  animation: slideInUp 1s ease-out forwards;
+  animation: slideInUp 1s ease-in-out forwards;
 }
 /* ANIMATIONS */
 
