@@ -8,10 +8,7 @@
   background-color: #b6b000ee;
 }
 body {
-  background-color: blanchedalmond;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(315deg, #070836, #2b3976);
+  background: linear-gradient(315deg, #000957, #344CB7);
   color: whitesmoke;
   background-position: center;
   width: 100vw;
@@ -24,7 +21,7 @@ img {
 }
 
 a {
-  color: #eef603;
+  color: #FFEB00;
   text-align: center;
   text-shadow: 0cap 1px 5px #939003;
   font-family: "Courier New", Courier, monospace;
@@ -39,51 +36,60 @@ a {
 button a {
   font-size: 3vw;
   padding: 2px;
-  color: #2100f7b7;
+  color: #344CB7;
   text-align: center;
   text-shadow: 0cap 1px 5px #939003;
 }
 button {
-  height: fit-content;
-  width: 30%;
+  height: max-content;
+  width: 35%;
   font-weight: bolder;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1rem;
   letter-spacing: 0.2rem;
-  color: #2100f7b7;
+  color: #344CB7;
   text-align: center;
-  text-shadow: 0cap 1px 5px #939003;
-  margin: auto 35%;
+  text-shadow: 0cap 1px 5px #055fe592;
   height: 3.5rem;
-  background-color: #dde400;
+  background-color: #FFEB00;
   border-radius: 20px;
-  border: #eef603 1px solid;
+  border: #FFEB00 1px solid;
 }
+.menu-button{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+}
+
 button:hover {
-  box-shadow: 0 0 7px 1px #f7fc65;
+  box-shadow: 0 0 7px 1px #FFEB00;
 }
 .home-buttons {
   width: 70%;
   height: auto;
   margin: 5% auto;
+  display: flex;
+  justify-content: center;
 }
 .home-buttons>nav{
   display: flex;
+  justify-content: center;
   width: 100%;
 }
-.home-buttons button{
-  margin: 2%;
+.home-buttons>nav>button{
+  margin: 5px;
 }
 
-p{
-  padding: 15px;
+p.aboutus{
+  margin: 40px;
 }
 h1 {
   font-family: "Bitcount", "Tektur", monospace;
   font-weight: 200;
   font-style: normal;
   text-align: center;
-  color: #eef603;
+  color: #FFEB00;
   text-shadow: 0cap 1px 5px #939003;
   font-style: italic;
   font-size: clamp(5rem, 1vw, 1rem);
@@ -92,7 +98,7 @@ h2 {
   font-family: "Bitcount", "Tektur", monospace;
   font-weight: 100;
   text-align: center;
-  color: #eef603;
+  color: #FFEB00;
   text-shadow: 0cap 1px 5px #aca902;
   font-size: clamp(5rem, 1vw, 1rem);
 }
@@ -106,21 +112,21 @@ ul {
 
 table#menu {
   margin: 15px auto;
-  border: 1px dashed #eef603;
+  border: 1px dashed #FFEB00;
   width: 95%;
   border-collapse: collapse;
 }
 thead {
-  border: 1px solid #eef603;
+  border: 1px solid #FFEB00;
 }
 tr {
-  border: 1px dashed #eef603;
+  border: 1px dashed #FFEB00;
 }
 th {
-  border: 1px solid #eef603;
+  border: 1px solid #FFEB00;
 }
 td {
-  border: 1px dashed #eef603;
+  border: 1px dashed #FFEB00;
   padding-left: 10px;
   font-weight: 500;
   font-size: 120%;
@@ -140,12 +146,11 @@ td.price {
 
 .wrapper{
     top: 3rem;
-    display: inline-block;
     position: relative;
     width: max-content;
     height: max-content;
     padding: 2%;
-    background: linear-gradient(0deg, rgba(255, 177, 60, 0.093), #00000050);
+    background: linear-gradient(0deg, rgba(255, 177, 60, 0.063), #00000024);
     margin: 5% auto;
     border-radius: 8px;
     
@@ -156,7 +161,7 @@ td.price {
   inset: 0;
   border-radius: 8px;
   padding: 2px;
-  background: linear-gradient(315deg, #fff201, #1555eb);
+  background: linear-gradient(315deg, #FFEB00 , #344CB7 70%);
   mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   mask-composite: exclude;
   pointer-events: none;
@@ -195,7 +200,7 @@ div.input-field{
 .input-field input:focus,.input-field textarea:focus{
   outline: none;
   border: 1px solid transparent;
-  border-image: linear-gradient(315deg, #fff201, #1555eb);
+  border-image: linear-gradient(315deg, #FFEB00, #1555eb);
   border-image-slice: 1;
   border-radius: 2px;
   transition: 10s linear;
@@ -216,9 +221,9 @@ div.input-field{
 .wrapper form button{
 
   background-color: #00000000;
-  border: 1px solid #eef603;
+  border: 1px solid #FFEB00;
   border-radius: 6px;
-  color: #eef603;
+  color: #FFEB00;
   width: max-content;
   margin: 10px auto;
   padding: 5px;
@@ -228,14 +233,14 @@ div.input-field{
 }
 .wrapper form button:hover{
   transition: 0.1s linear;
-  border: 1px solid yellow;
-  color: yellow;
+  border: 1px solid #FFEB00;
+  color: #FFEB00;
 }
 .wrapper form button:active{
   transform: scale(110%);
   transition: 0.1s linear;
-  border: 1px solid yellow;
-  color: yellow;
+  border: 1px solid #FFEB00;
+  color: #FFEB00;
 }
 
 /* BITE-KNIGHTS LOGO */
@@ -256,17 +261,16 @@ div.main-nav{
   width: 100vw;
   height: 50px;
   padding: -5px;
-  background: #c2c500ee;
+  background: #577BC1;
   position: relative;
+  display: flex;
   align-items: center;
+  justify-content: center;
+  
 }
 div.main-nav nav{
   width: fit-content;
   height: auto;
-  position: absolute;
-  margin: auto;
-  top: 50%;
-  transform: translateY(-50%);
 }
 div.main-nav nav a{
   margin: 5px;
