@@ -34,7 +34,9 @@ a {
   height: max-content;
 }
 button a {
-  font-size: 3vw;
+  width: 100%;
+  height: 100%;
+  font-size: 2rem;
   padding: 2px;
   color: #344CB7;
   text-align: center;
